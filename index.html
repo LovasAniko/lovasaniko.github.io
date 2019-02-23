@@ -1,13 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<link rel="stylesheet" href="blog.css">
 </head>
+
 <body>
-    Helló idegen!
-    Huha
+    
+        <div class="cim-hatter">
+             <h1>LA-la-LA - az én blogom</h1>
+        </div>
+        <form >
+            <h2>Új bejegyzés készítése</h2>
+            <div><label class="dolt">Bejegyzés címe:</label></div>
+            <div><input type="text" name="uj-bejegyzes-cime" id="title"></div>
+            <div><label class="dolt">Szöveg:</label></div>
+            <div><textarea name="uj-bejegyzes-szovege" id="text" cols="30" rows="10"></textarea></div>
+            <div><input type="submit" value="Közzéteszem" class="dolt" id="kozzeteszgomb"></div>
+        </form>
+        <div><h2>Korábbi bejegyzések</h2></div>
+        <div id="korabbiBejegyzes">
+            <div class="korabbi-post">
+                <h3>Korábbi bejegyzés 1</h3>
+                <p><br>fAREGTFAERa  <br> ífaregaggasrgggg <br>adfgaegaegae<br> gaegagafgagaeg</p>
+            </div>
+            <div class="korabbi-post">
+                <h3>Korábbi bejegyzés 2</h3>
+                <p><br>agasth  <br>
+                ífaregaggasrgfgfgfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggg <br>
+                adfgaegaegae <br>
+                gaegagafgagaeg</p>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBWq-m0PaIBpovXfFziDfIsCa-m9UPOZ14",
+    authDomain: "blog-d1236.firebaseapp.com",
+    databaseURL: "https://blog-d1236.firebaseio.com",
+    projectId: "blog-d1236",
+    storageBucket: "blog-d1236.appspot.com",
+    messagingSenderId: "875944690288"
+  };
+  firebase.initializeApp(config);
+fb = firebase.database();
+</script>
+ <script src="blog.js"></script> 
 </body>
 </html>

@@ -1,0 +1,50 @@
+body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f3ede1;
+    align-content: center
+}
+
+h1 {
+    color: #571424;
+    font-family: verdana;
+
+}
+
+h2 {
+    color: #571424;
+    font-family: verdana;
+}
+
+h3 {
+    color: #571424;
+    
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+
+.cim-hatter {
+    background-color: #25201c96;
+    background-image: url('kep.png');
+    display: flex;
+    align-content: center;
+}
+
+.korabbi-post {
+    background-color: #cbc6b8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    text-align: right;
+}
+
+.dolt {
+    font-style: italic
+}
